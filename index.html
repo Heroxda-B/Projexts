@@ -5,6 +5,7 @@
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -46,9 +47,23 @@
     button:hover { background: #555; }
     .operator { background: #ff9500; }
     .equals { background: #34c759; grid-column: span 2; }
+    .blur-title {
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      filter: blur(2px);
+      transition: filter 0.3s ease;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .blur-title:hover {
+      filter: blur(0px);
+    }
   </style>
 </head>
 <body>
+
+  <h1 class="blur-title">Hak hseb a zen</h1>
 
   <div class="calculator">
     <input type="text" id="display" disabled>
